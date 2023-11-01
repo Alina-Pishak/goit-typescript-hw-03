@@ -39,7 +39,6 @@ abstract class House {
   comeIn(person: Person): void {
     if (this.door) {
       this.tenants.push(person);
-      console.log("this.", this.tenants);
     }
   }
 }
@@ -52,7 +51,6 @@ class MyHouse extends House {
   openDoor(key: Key): void {
     if (this.key === key) {
       this.door = true;
-      console.log("this.door", this.door);
     }
   }
 }
